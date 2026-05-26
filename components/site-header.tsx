@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import ViewsBadge from "@/components/views-badge"
 
 export default function SiteHeader() {
   return (
@@ -17,20 +18,30 @@ export default function SiteHeader() {
           <span className="font-mono text-lg font-bold tracking-tight">
             Mrvevon<span className="text-primary">.de</span>
           </span>
+          <span className="ml-1 hidden sm:inline-flex">
+            <ViewsBadge />
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-2 md:flex">
           <NavLink href="#play">Spielen</NavLink>
           <NavLink href="#how">Anleitung</NavLink>
+          <NavLink href="#socials">Connect</NavLink>
+          <NavLink href="#faq">FAQ</NavLink>
           <NavLink href="#about">Über</NavLink>
         </nav>
 
-        <a
-          href="#play"
-          className="glass inline-flex h-10 items-center rounded-full px-5 text-sm font-semibold text-foreground transition-all hover:scale-105 hover:bg-white/15"
-        >
-          Jetzt spielen
-        </a>
+        <div className="flex items-center gap-2">
+          <span className="inline-flex sm:hidden">
+            <ViewsBadge />
+          </span>
+          <a
+            href="#play"
+            className="glass inline-flex h-10 items-center rounded-full px-5 text-sm font-semibold text-foreground transition-all hover:scale-105 hover:bg-white/15"
+          >
+            Spielen
+          </a>
+        </div>
       </div>
     </header>
   )

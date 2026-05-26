@@ -4,7 +4,7 @@ const steps = [
   {
     icon: MousePointerClick,
     title: "Klicken",
-    desc: "Klick mit der Maus irgendwo auf das Spielfeld, damit die Ente nach oben flattert.",
+    desc: "Klick mit der Maus irgendwo auf das Spielfeld, damit der Vogel nach oben flattert.",
   },
   {
     icon: Smartphone,
@@ -14,7 +14,7 @@ const steps = [
   {
     icon: Keyboard,
     title: "Leertaste",
-    desc: "Am Computer kannst du auch die Leertaste drücken, um die Ente zu steuern.",
+    desc: "Am Computer kannst du auch die Leertaste drücken, um den Vogel zu steuern.",
   },
 ]
 
